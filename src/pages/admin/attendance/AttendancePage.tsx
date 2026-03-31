@@ -126,7 +126,7 @@ export default function AttendancePage() {
         title="Rekap Absensi"
         subtitle="Data kehadiran seluruh karyawan."
         breadcrumbs={[
-          { label: "Dashboard", href: "/admin/dashboard" },
+          { label: "Dashboard", href: "/hr/dashboard" },
           { label: "Rekap Absensi" },
         ]}
       />
