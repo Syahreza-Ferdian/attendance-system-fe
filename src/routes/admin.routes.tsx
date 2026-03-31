@@ -11,6 +11,9 @@ import DivisionPage from "@/pages/admin/division/DivisionPage";
 import DivisionCreatePage from "@/pages/admin/division/DivisionCreatePage";
 import PositionPage from "@/pages/admin/position/PositionPage";
 import PositionCreatePage from "@/pages/admin/position/PositionCreatePage";
+import WorkSchedulePage from "@/pages/admin/work_schedule/WorkSchedulePage";
+import WorkScheduleCreatePage from "@/pages/admin/work_schedule/WorkScheduleCreatePage";
+import AssignWorkSchedulePage from "@/pages/admin/work_schedule/AssignWorkSchedulePage";
 
 export default [
   {
@@ -60,6 +63,22 @@ export default [
       {
         path: "master-data/positions/:positionId/edit",
         element: <PositionCreatePage />,
+      },
+      {
+        path: "master-data/work-schedules",
+        element: <WorkSchedulePage />,
+      },
+      {
+        path: "master-data/work-schedules/create",
+        element: <WorkScheduleCreatePage />,
+      },
+      {
+        path: "master-data/work-schedules/:workScheduleId/edit",
+        element: <WorkScheduleCreatePage />,
+      },
+      {
+        path: "/hr/master-data/work-schedules/assign",
+        element: <AssignWorkSchedulePage />,
       },
     ],
   },
