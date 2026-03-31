@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Controller, useForm, type SubmitHandler } from "react-hook-form";
 import { isAxiosError } from "axios";
 import toast from "react-hot-toast";
-import { User, Save, X, BriefcaseBusiness } from "lucide-react";
+import { Save, X, BriefcaseBusiness } from "lucide-react";
 import { CardBody, CardHeader, CardRoot } from "@/components/Card";
 import Button from "@/components/Button";
 import CustomSelect, { CustomLabel, Input, Textarea } from "@/components/Form";
@@ -15,15 +15,7 @@ import useCreatePosition from "@/services/position/useCreatePosition";
 import useUpdatePosition from "@/services/position/useUpdatePosition";
 import type { ICreatePositionPayload } from "@/types/position/position.types";
 import useGetAllDivisions from "@/services/divison/useGetAllDivision";
-
-function FieldSkeleton() {
-  return (
-    <div className="space-y-1.5">
-      <div className="h-4 w-28 bg-slate-100 rounded animate-pulse" />
-      <div className="h-10 bg-slate-100 rounded-xl animate-pulse" />
-    </div>
-  );
-}
+import FieldSkeleton from "@/components/Skeleton";
 
 interface Props {
   isEditMode?: boolean;

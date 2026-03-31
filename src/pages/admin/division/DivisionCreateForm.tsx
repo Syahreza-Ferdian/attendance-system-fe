@@ -13,15 +13,7 @@ import useGetDivisionById from "@/services/divison/useGetDivisionById";
 import type { ICreateDivisionPayload } from "@/types/division/division.types";
 import useCreateDivision from "@/services/divison/useCreateDivision";
 import useUpdateDivision from "@/services/divison/useUpdateDivision";
-
-function FieldSkeleton() {
-  return (
-    <div className="space-y-1.5">
-      <div className="h-4 w-28 bg-slate-100 rounded animate-pulse" />
-      <div className="h-10 bg-slate-100 rounded-xl animate-pulse" />
-    </div>
-  );
-}
+import FieldSkeleton from "@/components/Skeleton";
 
 interface Props {
   isEditMode?: boolean;
