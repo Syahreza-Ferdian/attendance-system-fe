@@ -172,20 +172,6 @@ export default function PositionCreateForm({ isEditMode, positionId }: Props) {
                     </CustomLabel>
                   </div>
 
-                  {/* Deskripsi */}
-                  <div className="col-span-12 sm:col-span-6">
-                    <CustomLabel label="Deskripsi">
-                      <Textarea
-                        placeholder="Deskripsi singkat tentang posisi ini."
-                        error={
-                          errors.description?.message ||
-                          serverErrorMap.description
-                        }
-                        {...register("description")}
-                      />
-                    </CustomLabel>
-                  </div>
-
                   <div className="col-span-12 sm:col-span-6">
                     <CustomLabel label="Divisi">
                       <Controller
@@ -213,6 +199,20 @@ export default function PositionCreateForm({ isEditMode, positionId }: Props) {
                           />
                         )}
                       ></Controller>
+                    </CustomLabel>
+                  </div>
+
+                  {/* Deskripsi */}
+                  <div className="col-span-20 sm:col-span-6">
+                    <CustomLabel label="Deskripsi">
+                      <Textarea
+                        placeholder="Deskripsi singkat tentang posisi ini."
+                        error={
+                          errors.description?.message ||
+                          serverErrorMap.description
+                        }
+                        {...register("description")}
+                      />
                     </CustomLabel>
                   </div>
                 </>
