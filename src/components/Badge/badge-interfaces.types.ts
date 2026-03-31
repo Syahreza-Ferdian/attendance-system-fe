@@ -1,4 +1,5 @@
 import type { AttendanceStatus } from "@/types/attendance/attendance.types";
+import type { WorkScheduleDay } from "@/types/work-schedule/work-schedule.types";
 
 // khusus badge untuk attendance status
 export interface AttendanceBadgeProps {
@@ -27,3 +28,9 @@ export const genericVariants = {
   warning: "bg-amber-50 text-amber-600",
   info: "bg-blue-50 text-blue-600",
 };
+
+// khusus untuk work schedule
+export interface WorkScheduleBadgeProps {
+  days: WorkScheduleDay[];
+  max?: number;
+}
