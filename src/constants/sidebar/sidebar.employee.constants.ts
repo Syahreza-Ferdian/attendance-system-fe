@@ -1,5 +1,5 @@
 import type { SidebarMenu } from "@/types/sidebar-menu.types";
-import { LayoutDashboard, User } from "lucide-react";
+import { LayoutDashboard } from "lucide-react";
 
 const EmployeeSidebarMenus: SidebarMenu[] = [
   {

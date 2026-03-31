@@ -1,4 +1,4 @@
-import { Users, ClipboardCheck, CalendarX, Clock } from "lucide-react";
+import { Users, ClipboardCheck, CalendarX } from "lucide-react";
 import { formatDate, formatTime } from "@lib/utils";
 import { CardBody, CardHeader, CardRoot, StatCard } from "@/components/Card";
 import PageHeader from "@/components/PageHeader";

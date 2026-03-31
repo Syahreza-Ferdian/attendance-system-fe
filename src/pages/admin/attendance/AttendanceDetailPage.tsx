@@ -2,7 +2,7 @@ import PageHeader from "@/components/PageHeader";
 import useGetAttendance from "@/services/attendance/useGetAttendanceById";
 import { useParams } from "react-router-dom";
 import AttendanceDetailContent from "./AttendanceDetailContent";
-import { AlertCircle, Link } from "lucide-react";
+import { AlertCircle } from "lucide-react";
 
 export default function AttendanceDetailPage() {
   const { attendanceId } = useParams<{ attendanceId: string }>();

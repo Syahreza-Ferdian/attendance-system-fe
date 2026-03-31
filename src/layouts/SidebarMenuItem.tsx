@@ -14,7 +14,6 @@ function SidebarMenuItem({
   icon: Icon,
   name,
   url,
-  isDropdown,
   hasSubMenu,
   subMenuLinks,
   isActiveMenu,

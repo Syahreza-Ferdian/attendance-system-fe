@@ -28,15 +28,6 @@ function fmtTime(iso: string | null): string {
   });
 }
 
-function fmtDate(iso: string): string {
-  return new Date(iso).toLocaleDateString("id-ID", {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
-}
-
 function calcDuration(inIso: string, outIso: string | null): string {
   if (!outIso) return "—";
   const ms = new Date(outIso).getTime() - new Date(inIso).getTime();

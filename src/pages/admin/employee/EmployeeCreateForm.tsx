@@ -146,7 +146,7 @@ export default function EmployeeCreateForm({ isEditMode, userId }: Props) {
     // }
 
     if (isEditMode && !payload.password?.trim()) {
-      delete payload.password;
+      payload.password = undefined as any;
     }
 
     try {

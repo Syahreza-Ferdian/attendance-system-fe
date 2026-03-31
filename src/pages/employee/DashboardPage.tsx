@@ -13,7 +13,7 @@ import Button from "@/components/Button";
 import { UserRoleType } from "@/types/user/user-role.types";
 
 export default function EmployeeDashboardPage() {
-  const { lastWeek, loading, mutate } = useGetUserLastWeekAttendance();
+  const { lastWeek, loading } = useGetUserLastWeekAttendance();
 
   const { stats } = useGetUSerAttendanceStats();
 
