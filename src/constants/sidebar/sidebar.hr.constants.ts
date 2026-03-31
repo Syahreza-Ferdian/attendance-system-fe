@@ -45,7 +45,7 @@ const HRSidebarMenus: SidebarMenu[] = [
         forceShow: true,
       },
       {
-        subUrl: "/hr/master-data/shifts",
+        subUrl: "/hr/master-data/work-schedules",
         label: "Jadwal Kerja",
         forceShow: true,
       },
