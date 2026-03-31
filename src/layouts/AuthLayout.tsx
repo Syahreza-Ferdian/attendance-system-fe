@@ -37,8 +37,8 @@ export default function AuthLayout() {
             mudah & efisien.
           </h2>
           <p className="text-primary-300 text-sm leading-relaxed">
-            Pantau absensi WFH, ajukan izin, dan lihat laporan kehadiran secara
-            real-time dari mana saja.
+            Pantau absensi WFH dan lihat laporan kehadiran secara real-time dari
+            mana saja.
           </p>
         </div>
 

@@ -14,7 +14,7 @@ export default function LoginPage() {
         <div className="w-9 h-9 bg-primary-600 rounded-xl flex items-center justify-center">
           <span className="text-white text-lg">✓</span>
         </div>
-        <span className="text-white font-bold text-lg">AbsensiKu</span>
+        <span className="text-white font-bold text-lg">Absensi</span>
       </div>
 
       <div className="mb-8">
